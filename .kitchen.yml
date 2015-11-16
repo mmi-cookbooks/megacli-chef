@@ -2,8 +2,18 @@
 driver:
   name: vagrant
 
+driver_config:
+  require_chef_omnibus: true
+
 provisioner:
-  name: chef_solo
+  name: chef_zero
+  attribuets:
+    cloud:
+      public_ipv4: '127.0.0.1'
+    authorization:
+      sudo:
+        users: ['vagrant']
+        passwordless: true
 
 platforms:
   - name: ubuntu-14.04
