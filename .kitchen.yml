@@ -7,7 +7,7 @@ driver_config:
 
 provisioner:
   name: chef_zero
-  attribuets:
+  attributes:
     cloud:
       public_ipv4: '127.0.0.1'
     authorization:

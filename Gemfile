@@ -15,7 +15,7 @@ group :spec do
   gem 'chefspec'
 end
 
-group :itegration do
+group :integration do
   gem 'test-kitchen'
 end
 
