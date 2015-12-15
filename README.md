@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/mmi-cookbooks/cookbook-megacli.svg)](https://travis-ci.org/mmi-cookbooks/cookbook-megacli)
+[![Build Status](https://travis-ci.org/mmi-cookbooks/megacli-chef.svg)](https://travis-ci.org/mmi-cookbooks/megacli-chef)
 
 # MegaCLI cookbook
 
