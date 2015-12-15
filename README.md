@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/mmi-cookbooks/cookbook-megacli.svg)](https://travis-ci.org/mmi-cookbooks/cookbook-megacli)
+
 # MegaCLI cookbook
 
 Install the megacli RAID controller tools
