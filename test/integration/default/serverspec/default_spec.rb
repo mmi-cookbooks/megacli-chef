@@ -7,6 +7,7 @@ require_relative 'spec_helper'
 # TODO: add context
 # 1. sda block device
 # 2. whitelisted support
-describe package('megacli') do
-  it { should be_installed }
-end
+
+# describe package('megacli') do
+#   it { should be_installed }
+# end
