@@ -5,5 +5,4 @@ describe 'megacli::default' do
   before { stub_resources }
 
   let(:chef_run) { ChefSpec::SoloRunner.new.converge(described_recipe) }
-
 end
