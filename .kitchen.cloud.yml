@@ -2,9 +2,14 @@
 driver:
   name: rackspace
   flavor_id: performance1-2
+  image_id: 09de0a66-3156-48b4-90a5-1cf25a905207
+  public_key_path: ~/.ssh/id_chef-solo-github.pub
   rackspace_username: <%= ENV['RACKSPACE_USERNAME'] %>
   rackspace_api_key: <%= ENV['RACKSPACE_API_KEY'] %>
   rackspace_region: IAD
   require_chef_omnibus: latest
   server_name: ci-<%= ENV['CIRCLE_PROJECT_REPONAME'] %>-<%= ENV['CIRCLE_BUILD_NUM'] %>
   wait_for: 1200
+platforms:
+   - name: default-ubuntu-1404
+

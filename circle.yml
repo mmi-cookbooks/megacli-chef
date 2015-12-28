@@ -7,11 +7,9 @@ machine:
 dependencies:
   cache_directories:
     - "~/bundle"
-  pre:
-    - ssh-keygen -y -f ~/.ssh/build_key.rsa > ~/.ssh/id_rsa.pub
   override:
     - bundle install --path=~/bundle --without=development --jobs=4 --retry=3:
-        timeout: 600
+        timeout: 1000
 
 test:
   override:
@@ -20,4 +18,4 @@ test:
     - bundle exec rake spec:
         timeout: 120
     - bundle exec rake integration:cloud:
-        timeout: 600
+        timeout: 1000
