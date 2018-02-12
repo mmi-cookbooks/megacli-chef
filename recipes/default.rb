@@ -17,8 +17,8 @@
 # limitations under the License.
 #
 
-if node[:block_device].include?('sda')
-  if node[:megacli][:supported].include?(node[:block_device][:sda][:model])
+if node['block_device'].include?('sda')
+  if node['megacli']['supported'].include?(node['block_device']['sda']['model'])
     package 'megacli' do
       action :install
     end

@@ -1,4 +1,4 @@
-# encoding: UTF-8
+
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
@@ -29,13 +29,9 @@ group :integration_rackspace do
 end
 
 group :development do
-  # gem 'coveralls'
-  gem 'thor-scmversion'
-  # gem 'growl'
-  # gem 'rb-fsevent'
-  gem 'guard', '= 2.8.2'
-  gem 'guard-kitchen'
+  gem 'guard'
   gem 'guard-foodcritic'
+  gem 'guard-kitchen'
   gem 'guard-rubocop'
-  # gem 'fauxhai'
+  gem 'thor-scmversion'
 end

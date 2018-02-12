@@ -1,0 +1,11 @@
+DEPENDENCIES
+  apt
+  megacli
+    path: .
+    metadata: true
+  yum
+
+GRAPH
+  apt (6.1.4)
+  megacli (0.3.1)
+  yum (5.1.0)
