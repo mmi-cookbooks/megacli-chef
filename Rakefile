@@ -32,7 +32,6 @@ namespace :integration do
       instance.test(:always)
     end
   end
-
   desc 'Test Kitchen with cloud plugins'
   task :cloud do
     if ENV['CI'] == 'true'
